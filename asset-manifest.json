@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f0c78d0.css",
-    "main.js": "/static/js/main.5708b5e5.js",
+    "main.css": "/static/css/main.8f7dda5d.css",
+    "main.js": "/static/js/main.70d0857b.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/NanumGothic-Regular.ttf": "/static/media/NanumGothic-Regular.3d4cadda438d02231739.ttf",
     "static/media/resItem.png": "/static/media/resItem.738e6bc38d1a19786f6d.png",
@@ -18,6 +18,7 @@
     "static/media/moderaterain.png": "/static/media/moderaterain.5b10a580636930af4182.png",
     "static/media/rain.png": "/static/media/rain.5b10a580636930af4182.png",
     "static/media/showerrain.png": "/static/media/showerrain.79dcded474bd0e878f21.png",
+    "static/media/haze.png": "/static/media/haze.e3ee1e001ac1e3bef6f6.png",
     "static/media/mist.png": "/static/media/mist.e3ee1e001ac1e3bef6f6.png",
     "static/media/fewclouds.png": "/static/media/fewclouds.bfacaf4afc169eb26cf0.png",
     "static/media/pointer.png": "/static/media/pointer.fbc1aad7fbfcd1069c0d.png",
@@ -25,12 +26,12 @@
     "static/media/overcastclouds.png": "/static/media/overcastclouds.1ecf80ed0581fefb4cee.png",
     "static/media/scatteredclouds.png": "/static/media/scatteredclouds.1ecf80ed0581fefb4cee.png",
     "index.html": "/index.html",
-    "main.5f0c78d0.css.map": "/static/css/main.5f0c78d0.css.map",
-    "main.5708b5e5.js.map": "/static/js/main.5708b5e5.js.map",
+    "main.8f7dda5d.css.map": "/static/css/main.8f7dda5d.css.map",
+    "main.70d0857b.js.map": "/static/js/main.70d0857b.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f0c78d0.css",
-    "static/js/main.5708b5e5.js"
+    "static/css/main.8f7dda5d.css",
+    "static/js/main.70d0857b.js"
   ]
 }
