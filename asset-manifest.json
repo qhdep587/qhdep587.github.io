@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.99b9afa9.css",
-    "main.js": "/static/js/main.d9e85c72.js",
+    "main.js": "/static/js/main.3b99f675.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/alpaka-main3.png": "/static/media/alpaka-main3.88638ef6cd6947a7600c.png",
     "static/media/NanumGothic-Regular.ttf": "/static/media/NanumGothic-Regular.3d4cadda438d02231739.ttf",
@@ -148,11 +148,11 @@
     "static/media/scatteredclouds.png": "/static/media/scatteredclouds.1ecf80ed0581fefb4cee.png",
     "index.html": "/index.html",
     "main.99b9afa9.css.map": "/static/css/main.99b9afa9.css.map",
-    "main.d9e85c72.js.map": "/static/js/main.d9e85c72.js.map",
+    "main.3b99f675.js.map": "/static/js/main.3b99f675.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99b9afa9.css",
-    "static/js/main.d9e85c72.js"
+    "static/js/main.3b99f675.js"
   ]
 }
