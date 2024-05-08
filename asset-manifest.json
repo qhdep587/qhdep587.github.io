@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.99b9afa9.css",
-    "main.js": "/static/js/main.67650997.js",
+    "main.js": "/static/js/main.818091be.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/alpaka-main3.png": "/static/media/alpaka-main3.88638ef6cd6947a7600c.png",
     "static/media/NanumGothic-Regular.ttf": "/static/media/NanumGothic-Regular.3d4cadda438d02231739.ttf",
+    "static/media/angel-main1.png": "/static/media/angel-main1.7ce69475535ecd732915.png",
     "static/media/resItem.png": "/static/media/resItem.738e6bc38d1a19786f6d.png",
     "static/media/alpaka-main26.png": "/static/media/alpaka-main26.3b74ea0b5a7e76e06ed0.png",
     "static/media/alpaka-main17.png": "/static/media/alpaka-main17.a91717fe9dbc2871f1cd.png",
@@ -96,6 +97,7 @@
     "static/media/wish-main5.png": "/static/media/wish-main5.f7a1d7f1b70f43e56a45.png",
     "static/media/wish-main13.png": "/static/media/wish-main13.dba3a3e338f7c513919e.png",
     "static/media/poke-main1.png": "/static/media/poke-main1.9b626dfd063be5910d29.png",
+    "static/media/angel-main2.png": "/static/media/angel-main2.db04a9d8869826b3a893.png",
     "static/media/poke-main2.png": "/static/media/poke-main2.a40336298b36c5d02daf.png",
     "static/media/alpaka-main29.png": "/static/media/alpaka-main29.9a1fd40ce852cf3d2aa8.png",
     "static/media/alpaka-main2.png": "/static/media/alpaka-main2.af14c94b2fd08106cc79.png",
@@ -127,10 +129,14 @@
     "static/media/kurly-main19.png": "/static/media/kurly-main19.22218bc96a1c64cf8c44.png",
     "static/media/wish-main3.png": "/static/media/wish-main3.2e511a1efe2f1b1650b5.png",
     "static/media/rose.jpg": "/static/media/rose.984d82e34626dda60f39.jpg",
+    "static/media/medi-main2.png": "/static/media/medi-main2.ea81c27c681ba4448721.png",
     "static/media/kurly-main8.png": "/static/media/kurly-main8.bbdf23210feb6c42b826.png",
+    "static/media/medi-main3.png": "/static/media/medi-main3.8bd151c312bb23c115c0.png",
+    "static/media/medi-main1.png": "/static/media/medi-main1.a1ebb1f0ee5b874f9a61.png",
     "static/media/kurly-main3.png": "/static/media/kurly-main3.81e166f4dfd6405e9400.png",
     "static/media/poke-main3.png": "/static/media/poke-main3.624c1f4b4849ca25c9cf.png",
     "static/media/wish-main27.png": "/static/media/wish-main27.e639bb3554da467866ce.png",
+    "static/media/medi-main4.png": "/static/media/medi-main4.1ccb3282eacf75201940.png",
     "static/media/Snow.png": "/static/media/Snow.887f1e47512ad92242bd.png",
     "static/media/Thunderstorm.png": "/static/media/Thunderstorm.b60260aa6dc9ecfc083b.png",
     "static/media/thunderstormwithrain.png": "/static/media/thunderstormwithrain.b60260aa6dc9ecfc083b.png",
@@ -159,11 +165,11 @@
     "static/media/scatteredclouds.png": "/static/media/scatteredclouds.1ecf80ed0581fefb4cee.png",
     "index.html": "/index.html",
     "main.99b9afa9.css.map": "/static/css/main.99b9afa9.css.map",
-    "main.67650997.js.map": "/static/js/main.67650997.js.map",
+    "main.818091be.js.map": "/static/js/main.818091be.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99b9afa9.css",
-    "static/js/main.67650997.js"
+    "static/js/main.818091be.js"
   ]
 }
