@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.99b9afa9.css",
+    "main.css": "/static/css/main.49939ce6.css",
     "main.js": "/static/js/main.818091be.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/alpaka-main3.png": "/static/media/alpaka-main3.88638ef6cd6947a7600c.png",
@@ -164,12 +164,12 @@
     "static/media/overcastclouds.png": "/static/media/overcastclouds.1ecf80ed0581fefb4cee.png",
     "static/media/scatteredclouds.png": "/static/media/scatteredclouds.1ecf80ed0581fefb4cee.png",
     "index.html": "/index.html",
-    "main.99b9afa9.css.map": "/static/css/main.99b9afa9.css.map",
+    "main.49939ce6.css.map": "/static/css/main.49939ce6.css.map",
     "main.818091be.js.map": "/static/js/main.818091be.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99b9afa9.css",
+    "static/css/main.49939ce6.css",
     "static/js/main.818091be.js"
   ]
 }
