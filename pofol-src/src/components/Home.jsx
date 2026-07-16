@@ -202,7 +202,7 @@ const Home = () => {
       <div className="home-item2">
         <canvas className="canvas-item" id="canvas"></canvas>
       </div>
-      <div className="home-item3">© 2026 DaeYun Lee. All Rights Reserved.</div>
+      <div className="home-item3">© 2023 DaeYun Lee. All Rights Reserved.</div>
     </div>
   );
 };

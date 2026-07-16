@@ -599,10 +599,6 @@ const Intro = () => {
           개발에 임하고 있습니다.
           <br />
           <br />
-          현재는 <span className="text-bold fsfw">AI</span>를 활용한
-          개발에도&nbsp;능숙합니다.
-          <br />
-          <br />
           방문해주셔서&nbsp;감사합니다.
         </div>
       </div>

@@ -582,19 +582,21 @@
 }
 .edu-text-box > .list-item::before {
   content: "";
-  background: linear-gradient(to right, #1e7c60, #790909);
-  color: rgba(29, 116, 83, 0.8);
+  background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
+  border-radius: 3px;
   height: 25px !important;
   width: 25px;
-  padding-inline: 1ch;
+  padding-inline: 1.5px;
+  margin-right: 13px;
 }
 .edu-text-box > .list-item2::before {
   content: "";
-  background: linear-gradient(to right, #1e7c60, #790909);
-  color: rgba(29, 116, 83, 0.8);
+  background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
+  border-radius: 3px;
   height: 25px !important;
   width: 25px;
-  padding-inline: 1ch;
+  padding-inline: 1.5px;
+  margin-right: 13px;
 }
 
 .edu:nth-child(1)::-webkit-scrollbar {
@@ -1545,19 +1547,21 @@
   }
   .edu-text-box > .list-item::before {
     content: "";
-    background: linear-gradient(to right, #1e7c60, #790909);
-    color: rgba(29, 116, 83, 0.8);
+    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
+    border-radius: 3px;
     height: 25px !important;
     width: 25px;
-    padding-inline: 1ch;
+    padding-inline: 1.5px;
+    margin-right: 13px;
   }
   .edu-text-box > .list-item2::before {
     content: "";
-    background: linear-gradient(to right, #1e7c60, #790909);
-    color: rgba(29, 116, 83, 0.8);
+    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
+    border-radius: 3px;
     height: 25px !important;
     width: 25px;
-    padding-inline: 1ch;
+    padding-inline: 1.5px;
+    margin-right: 13px;
   }
 
   .edu:nth-child(1)::-webkit-scrollbar {
@@ -2236,19 +2240,21 @@
   }
   .edu-text-box > .list-item::before {
     content: "";
-    background: linear-gradient(to right, #1e7c60, #790909);
-    color: rgba(29, 116, 83, 0.8);
+    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
+    border-radius: 3px;
     height: 25px !important;
     width: 25px;
-    padding-inline: 1ch;
+    padding-inline: 1.5px;
+    margin-right: 13px;
   }
   .edu-text-box > .list-item2::before {
     content: "";
-    background: linear-gradient(to right, #1e7c60, #790909);
-    color: rgba(29, 116, 83, 0.8);
+    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
+    border-radius: 3px;
     height: 25px !important;
     width: 25px;
-    padding-inline: 1ch;
+    padding-inline: 1.5px;
+    margin-right: 13px;
   }
 
   .edu:nth-child(1)::-webkit-scrollbar {
@@ -3962,4 +3968,45 @@
     font-size: 16;
     color: rgb(234, 255, 245);
   }
+}
+
+/* ===== subtle polish (project/work/edu) ===== */
+/* 카드 호버 */
+.card-pro {
+  transition: transform 0.25s ease, background 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+.card-pro:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.38);
+}
+/* 캐러셀 화살표 */
+.wrapper .i1,
+.wrapper .i2 {
+  border-radius: 7px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+.wrapper .i1:hover,
+.wrapper .i2:hover {
+  background: rgba(30, 124, 96, 0.95);
+  transform: scale(1.12);
+}
+/* 모달 */
+.modal-view {
+  backdrop-filter: blur(3px);
+}
+.modal-view-card {
+  border-radius: 12px;
+  box-shadow: 0 26px 64px rgba(0, 0, 0, 0.55);
+}
+.x-btn {
+  transition: background 0.2s ease, transform 0.25s ease;
+}
+.x-btn:hover {
+  background: rgba(121, 9, 9, 0.85);
+  transform: rotate(90deg);
+}
+/* 스와이프 가이드 손가락 - 좌우 스와이프 제스처 느낌으로 */
+img.alim-move-pro {
+  transform: rotate(-30deg);
 }
