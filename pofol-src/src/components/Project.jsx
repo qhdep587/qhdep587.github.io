@@ -590,22 +590,38 @@ const Project = () => {
           setProjectCate("SIDE");
           setProjectTitle("Vake");
           setProjectSubTitle("브이로그 메이킹 앱 (출시예정)");
-          setProjectInfo("개발중 / All / 출시예정");
-          setProjectSkill(["ReactNative", "Expo", "TypeScript", "Supabase", "FFmpeg"]);
+          setProjectInfo("개발중 / All / 2026 출시예정");
+          setProjectSkill(["ReactNative", "Expo", "TypeScript", "Supabase", "FFmpeg", "EAS"]);
           setEndNum(5);
           setPhotoUrl("vake-main");
           setContent(
             <>
               Vake = Vlog Make<br></br>
-              "찍은 영상 자동정리 + 스토리 있는 브이로그"<br></br>
-              를 컨셉으로 현재 개발중인 모바일 앱입니다.<br></br>
-              <br></br>촬영한 영상을 자동으로 정리하고,<br></br>
-              자막(STT), 편집, Undo, Export 등<br></br>
-              브이로그 제작에 필요한 기능을 담고 있습니다.<br></br>
-              <br></br>FFmpeg 렌더 서버(얼굴 블러 등)와<br></br>
-              Supabase 백엔드, EAS 빌드/OTA 배포로<br></br>
-              구성했으며 TestFlight 테스트 중입니다.<br></br>
-              <br></br>2026년 출시 예정입니다.
+              "찍기만 하면 브이로그가 완성되는 앱"을<br></br>
+              목표로 개발중인 모바일 앱입니다.<br></br>
+              <br></br>
+              ( 컨셉 )<br></br>
+              기존 편집앱이 "가져오면 알아서 편집"이라면,<br></br>
+              Vake는 반대로 스토리를 먼저 설계하고<br></br>
+              영상을 채워 넣는 방식입니다.<br></br>
+              여행/일상/커플/반려동물 등 유형별로<br></br>
+              AI가 스토리 섹션을 추천하고,<br></br>
+              촬영일 기준으로 클립을 자동 정리합니다.<br></br>
+              <br></br>
+              ( 편집기 )<br></br>
+              트림, 속도, 크롭, 필터, 자막(STT),<br></br>
+              스티커, BGM, 전환, PIP, 비율 변경 등<br></br>
+              풀 편집 기능을 직접 구현했으며<br></br>
+              릴스/틱톡/쇼츠 규격 Export를 지원합니다.<br></br>
+              <br></br>
+              ( 기술 구성 )<br></br>
+              ReactNative(Expo) + TypeScript 앱,<br></br>
+              Supabase 백엔드,<br></br>
+              FFmpeg 렌더 서버(얼굴 블러 등),<br></br>
+              EAS 빌드/OTA 배포 파이프라인 구성.<br></br>
+              <br></br>
+              현재 TestFlight 테스트 중이며<br></br>
+              2026년 출시 예정입니다.
             </>
           );
           break;
