@@ -174,7 +174,7 @@ const Project = () => {
       };
       const dragging = (e) => {
         if (!isDragging) return;
-        carousel.scrollLeft = startScrollLeft - (e.pageX - startX) - 160;
+        carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
         if (carousel.scrollLeft < 3) {
           document.querySelector("#left1").classList.add("opa5");
         } else if (carousel.scrollLeft > carousel_width - 30) {
@@ -191,6 +191,7 @@ const Project = () => {
       carousel.addEventListener("mousedown", dragStart);
       carousel.addEventListener("mousemove", dragging);
       carousel.addEventListener("mouseup", dragStop);
+      carousel.addEventListener("mouseleave", dragStop);
     }
   }, []);
   useEffect(() => {
@@ -266,7 +267,7 @@ const Project = () => {
       };
       const dragging = (e) => {
         if (!isDragging) return;
-        carousel2.scrollLeft = startScrollLeft - (e.pageX - startX) - 160;
+        carousel2.scrollLeft = startScrollLeft - (e.pageX - startX);
         if (carousel2.scrollLeft < 3) {
           document.querySelector("#left2").classList.add("opa5");
         } else if (carousel2.scrollLeft > carousel_width - 30) {
@@ -283,6 +284,7 @@ const Project = () => {
       carousel2.addEventListener("mousedown", dragStart);
       carousel2.addEventListener("mousemove", dragging);
       carousel2.addEventListener("mouseup", dragStop);
+      carousel2.addEventListener("mouseleave", dragStop);
     }
   }, []);
 
@@ -309,6 +311,17 @@ const Project = () => {
       타임딜 기능 개발"
     </>
   );
+  //화살표 클릭 시 카드 단위 스크롤
+  const arrowScroll = (sel, dir, leftId, rightId) => {
+    const el = document.querySelector(sel);
+    el.scrollBy({ left: dir * 290, behavior: "smooth" });
+    setTimeout(() => {
+      const maxLeft = el.scrollWidth - el.clientWidth;
+      document.getElementById(leftId).classList.toggle("opa5", el.scrollLeft < 3);
+      document.getElementById(rightId).classList.toggle("opa5", el.scrollLeft > maxLeft - 30);
+    }, 400);
+  };
+
   const cardClick = (e, num) => {
     if (goStop) {
       switch (num) {
@@ -429,6 +442,157 @@ const Project = () => {
               자사 솔루션 <br></br>( 화이트리스트, 장비관리시스템 등 )<br></br>
               디자인, 퍼블, 프론트 부분 담당하였고<br></br>
               <br></br>대시보드는 chart라이브러리 이용하였습니다.
+            </>
+          );
+          break;
+        case 15: //이지원
+          setProjectCate("COMPANY");
+          setProjectTitle("이지원");
+          setProjectSubTitle("금융권 프로젝트");
+          setProjectInfo("2025.12 ~ 2026.06 (7개월) / FE / 프리랜서");
+          setProjectSkill(["React", "TypeScript", "JavaScript", "JWT", "Git"]);
+          setEndNum(1);
+          setPhotoUrl("ejiwon-main");
+          setContent(
+            <>
+              금융권 프로젝트에서<br></br>프론트엔드 업무를 진행했습니다.<br></br>
+              <br></br>
+              ( 현대차증권 )<br></br>
+              금융 업무 시스템 차세대 프로젝트 개발<br></br>
+              관리자 전체 및 퇴직연금 상품매매,<br></br>인증서인증 등 담당<br></br>
+              2026.02 ~ 2026.06<br></br>
+              <br></br>
+              ( 하이펀딩 )<br></br>
+              주식담보대출 시스템 개발<br></br>
+              대출 신청 및 관리, 회원가입,<br></br>로그인, 인증 등 담당<br></br>
+              2025.12 ~ 2026.02
+            </>
+          );
+          break;
+        case 16: //컨트롤에이
+          setProjectCate("COMPANY");
+          setProjectTitle("컨트롤에이");
+          setProjectSubTitle("배터리여권 통합시스템 어드민");
+          setProjectInfo("2025.09 ~ 2025.12 (4개월) / FE / 프리랜서");
+          setProjectSkill(["React", "Next.js", "ReactQuery", "RestApi", "SSR", "GitLab", "Vercel"]);
+          setEndNum(1);
+          setPhotoUrl("controla-main");
+          setContent(
+            <>
+              부산시에서 진행하는<br></br>배터리여권 통합시스템 프로젝트입니다.<br></br>
+              <br></br>3개 프로젝트 중 어드민페이지를 담당하여<br></br>
+              api연동 및 화면 작업, QA를 진행했습니다.
+            </>
+          );
+          break;
+        case 17: //투스카이
+          setProjectCate("COMPANY");
+          setProjectTitle("투스카이");
+          setProjectSubTitle("Snowpeak D2C 쇼핑몰 / 어드민");
+          setProjectInfo("2025.05 ~ 2025.08 (4개월) / FE / 프리랜서");
+          setProjectSkill(["React", "Next.js"]);
+          setEndNum(1);
+          setPhotoUrl("twosky-main");
+          setContent(
+            <>
+              Snowpeak 본사 프로젝트로<br></br>
+              D2C 쇼핑몰과 어드민페이지를 작업했습니다.<br></br>
+              <br></br>api연동 및 화면 작업, QA를 진행했습니다.<br></br>
+              <br></br>site :{" "}
+              <a href="https://www.snowpeak.co.kr" target="_blank" rel="noreferrer">
+                https://www.snowpeak.co.kr
+              </a>
+            </>
+          );
+          break;
+        case 18: //아레스조이
+          setProjectCate("COMPANY");
+          setProjectTitle("아레스조이");
+          setProjectSubTitle("감정평가 프로그램 고도화");
+          setProjectInfo("2025.03 ~ 2025.05 (3개월) / FE / 프리랜서");
+          setProjectSkill(["React", "RestApi"]);
+          setEndNum(1);
+          setPhotoUrl("aresjoy-main");
+          setContent(
+            <>
+              감정사에서 사용하는 프로그램의<br></br>고도화 업무를 진행했습니다.<br></br>
+              <br></br>그 중 업무가 가장 많은<br></br>
+              "메인리스트" 페이지 기능을 전부 담당하여<br></br>
+              <br></br>api연동, 10개의 모달 로직, dataTable,<br></br>
+              오른쪽클릭메뉴, pdf다운로드, 인쇄, 엑셀,<br></br>
+              단축키 로직 등<br></br>
+              하나의 데이터 및 업무관리 기능의<br></br>도메인을 제작했습니다.
+            </>
+          );
+          break;
+        case 19: //유케이미디어
+          setProjectCate("COMPANY");
+          setProjectTitle("유케이미디어");
+          setProjectSubTitle("SK에코플랜트 / 자사 몰·앱");
+          setProjectInfo("2024.06 ~ 2025.03 (10개월) / FE");
+          setProjectSkill(["React", "Next.js", "ReactNative", "Expo"]);
+          setEndNum(1);
+          setPhotoUrl("ukmedia-main");
+          setContent(
+            <>
+              프로젝트 수행 및<br></br>자사 몰, 자사 앱을 개발했습니다.<br></br>
+              <br></br>
+              ( SK에코플랜트 )<br></br>
+              EPR, LOOP 재활용 순환시스템 '써큘러'<br></br>
+              재활용 업자, 공제조합 등에서 사용하는<br></br>B2B 프로젝트<br></br>
+              2024.06 ~ 2024.12<br></br>
+              <br></br>
+              ( 자사 몰 / React )<br></br>
+              외국인 근로자가 이용 가능한 몰<br></br>
+              <br></br>
+              ( 자사 소셜앱 / ReactNative, Expo )<br></br>
+              자영업자들의 익명 소셜앱
+            </>
+          );
+          break;
+        case 26: //오토트레이딩봇
+          setProjectCate("SIDE");
+          setProjectTitle("GOD TRADER");
+          setProjectSubTitle("AI 자동매매 시스템");
+          setProjectInfo("사이드 프로젝트 / All");
+          setProjectSkill(["TypeScript", "Next.js", "Express", "Supabase", "OpenAI"]);
+          setEndNum(1);
+          setPhotoUrl("trading-main");
+          setContent(
+            <>
+              암호화폐 자동매매 봇 프로젝트입니다.<br></br>
+              업비트 현물, 바이낸스 선물을<br></br>주기적으로 분석하여 자동매매합니다.<br></br>
+              <br></br>공포/탐욕, 고래 움직임, 다이버전스,<br></br>
+              펀딩비, ML 예측 등 모든 지표를<br></br>
+              통합 분석하는 AI 엔진(godBrain)과<br></br>
+              GPT 기반 시장 분석을 결합했습니다.<br></br>
+              <br></br>주기적인 성과 분석과 백테스팅으로<br></br>
+              파라미터를 자동 최적화하는<br></br>자가발전 구조이며,<br></br>
+              거래/일일/주간 보고 시스템도 갖췄습니다.<br></br>
+              <br></br>60개 이상의 api 라우트와<br></br>140개 이상의 서비스로 구성했습니다.
+            </>
+          );
+          break;
+        case 27: //Vake
+          setProjectCate("SIDE");
+          setProjectTitle("Vake");
+          setProjectSubTitle("브이로그 메이킹 앱 (출시예정)");
+          setProjectInfo("개발중 / All / 출시예정");
+          setProjectSkill(["ReactNative", "Expo", "TypeScript", "Supabase", "FFmpeg"]);
+          setEndNum(1);
+          setPhotoUrl("vake-main");
+          setContent(
+            <>
+              Vake = Vlog Make<br></br>
+              "찍은 영상 자동정리 + 스토리 있는 브이로그"<br></br>
+              를 컨셉으로 현재 개발중인 모바일 앱입니다.<br></br>
+              <br></br>촬영한 영상을 자동으로 정리하고,<br></br>
+              자막(STT), 편집, Undo, Export 등<br></br>
+              브이로그 제작에 필요한 기능을 담고 있습니다.<br></br>
+              <br></br>FFmpeg 렌더 서버(얼굴 블러 등)와<br></br>
+              Supabase 백엔드, EAS 빌드/OTA 배포로<br></br>
+              구성했으며 TestFlight 테스트 중입니다.<br></br>
+              <br></br>2026년 출시 예정입니다.
             </>
           );
           break;
@@ -774,7 +938,7 @@ const Project = () => {
             <canvas className="mini-canvas-pro" id="mini-canvas"></canvas>
           </div>
           <div className="wrapper">
-            <i id="left1" className="i1 opa5">
+            <i id="left1" className="i1 opa5" onClick={() => arrowScroll(".carousel", -1, "left1", "right1")}>
               <img className="angle-bracket" src={require("../common/card/lc.png")} alt="l-angle-bracket" />
             </i>
             <div className="alim-move-pro" style={{ display: tf ? "" : "none" }}>
@@ -786,6 +950,116 @@ const Project = () => {
                 style={{
                   marginLeft: "16px",
                 }}
+                onClick={(e) => {
+                  cardClick(e, 15);
+                }}
+              >
+                <div className="img">
+                  <img src={require("../common/project/ejiwon-main1.png")} draggable="false" alt="ejiwon-img" />
+                </div>
+                <h3>이지원</h3>
+                <span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
+                  <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
+                    <span className="f15" style={{ display: "inline-block" }}>
+                      <div className="text-btn">role</div>&nbsp;&nbsp;
+                    </span>
+                    FE
+                  </span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}> ]</span>
+                </span>
+                <span>2025.12 ~ 2026.06 (7개월)</span>
+              </li>
+              <li
+                className="card-pro"
+                onClick={(e) => {
+                  cardClick(e, 16);
+                }}
+              >
+                <div className="img">
+                  <img src={require("../common/project/controla-main1.png")} draggable="false" alt="controla-img" />
+                </div>
+                <h3>컨트롤에이</h3>
+                <span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
+                  <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
+                    <span className="f15" style={{ display: "inline-block" }}>
+                      <div className="text-btn">role</div>&nbsp;&nbsp;
+                    </span>
+                    FE
+                  </span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}> ]</span>
+                </span>
+                <span>2025.09 ~ 2025.12 (4개월)</span>
+              </li>
+              <li
+                className="card-pro"
+                onClick={(e) => {
+                  cardClick(e, 17);
+                }}
+              >
+                <div className="img">
+                  <img src={require("../common/project/twosky-main1.png")} draggable="false" alt="twosky-img" />
+                </div>
+                <h3>투스카이</h3>
+                <span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
+                  <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
+                    <span className="f15" style={{ display: "inline-block" }}>
+                      <div className="text-btn">role</div>&nbsp;&nbsp;
+                    </span>
+                    FE
+                  </span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}> ]</span>
+                </span>
+                <span>2025.05 ~ 2025.08 (4개월)</span>
+              </li>
+              <li
+                className="card-pro"
+                onClick={(e) => {
+                  cardClick(e, 18);
+                }}
+              >
+                <div className="img">
+                  <img src={require("../common/project/aresjoy-main1.png")} draggable="false" alt="aresjoy-img" />
+                </div>
+                <h3>아레스조이</h3>
+                <span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
+                  <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
+                    <span className="f15" style={{ display: "inline-block" }}>
+                      <div className="text-btn">role</div>&nbsp;&nbsp;
+                    </span>
+                    FE
+                  </span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}> ]</span>
+                </span>
+                <span>2025.03 ~ 2025.05 (3개월)</span>
+              </li>
+              <li
+                className="card-pro"
+                onClick={(e) => {
+                  cardClick(e, 19);
+                }}
+              >
+                <div className="img">
+                  <img src={require("../common/project/ukmedia-main1.png")} draggable="false" alt="ukmedia-img" />
+                </div>
+                <h3>유케이미디어</h3>
+                <span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
+                  <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
+                    <span className="f15" style={{ display: "inline-block" }}>
+                      <div className="text-btn">role</div>&nbsp;&nbsp;
+                    </span>
+                    FE
+                  </span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}> ]</span>
+                </span>
+                <span>2024.06 ~ 2025.03 (10개월)</span>
+              </li>
+              <li
+                className="card-pro"
                 onClick={(e) => {
                   cardClick(e, 11);
                 }}
@@ -873,7 +1147,7 @@ const Project = () => {
                 <span>2020.06 ~ 2020.09 (4개월)</span>
               </li>
             </ul>
-            <i id="right1" className="i1">
+            <i id="right1" className="i1" onClick={() => arrowScroll(".carousel", 1, "left1", "right1")}>
               <img
                 className="angle-bracket"
                 src={require("../common/card/rc.png")}
@@ -889,7 +1163,7 @@ const Project = () => {
             <canvas className="mini-canvas-pro" id="mini-canvas2"></canvas>
           </div>
           <div className="wrapper">
-            <i id="left2" className="i2 opa5">
+            <i id="left2" className="i2 opa5" onClick={() => arrowScroll(".carousel2", -1, "left2", "right2")}>
               <img
                 className="angle-bracket2"
                 src={require("../common/card/lc.png")}
@@ -898,6 +1172,56 @@ const Project = () => {
               />
             </i>
             <ul className="carousel2">
+              <li
+                className="card-pro"
+                onClick={(e) => {
+                  cardClick(e, 27);
+                }}
+                style={{
+                  marginLeft: "16px",
+                }}
+              >
+                <div className="img">
+                  <img src={require("../common/project/vake-main1.png")} draggable="false" alt="vake-img" />
+                </div>
+                <h3>Vake</h3>
+                <span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
+                  <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
+                    <span className="f15" style={{ display: "inline-block" }}>
+                      <div className="text-btn">role</div>&nbsp;&nbsp;
+                    </span>
+                    All
+                  </span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}> ]</span>
+                </span>
+                <span>개발중 / 출시예정</span>
+              </li>
+              <li
+                className="card-pro"
+                onClick={(e) => {
+                  cardClick(e, 26);
+                }}
+                style={{
+                  marginLeft: "16px",
+                }}
+              >
+                <div className="img">
+                  <img src={require("../common/project/trading-main1.png")} draggable="false" alt="trading-img" />
+                </div>
+                <h3>GOD TRADER</h3>
+                <span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
+                  <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
+                    <span className="f15" style={{ display: "inline-block" }}>
+                      <div className="text-btn">role</div>&nbsp;&nbsp;
+                    </span>
+                    All
+                  </span>
+                  <span style={{ color: "#1e7c60", fontWeight: 600 }}> ]</span>
+                </span>
+                <span>AI 자동매매 / 사이드 프로젝트</span>
+              </li>
               <li
                 className="card-pro"
                 onClick={(e) => {
@@ -1104,7 +1428,7 @@ const Project = () => {
                 <span>ㅁㄴㅇㅁㄴㅇ</span>
               </li> */}
             </ul>
-            <i id="right2" className="i2">
+            <i id="right2" className="i2" onClick={() => arrowScroll(".carousel2", 1, "left2", "right2")}>
               <img className="angle-bracket2" src={require("../common/card/rc.png")} alt="r-angle-bracket" />
             </i>
           </div>
