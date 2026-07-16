@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.73cfc6d5.css",
-    "main.js": "/static/js/main.f0a69b65.js",
+    "main.js": "/static/js/main.d12fd899.js",
     "static/js/453.c0a2c4b1.chunk.js": "/static/js/453.c0a2c4b1.chunk.js",
     "static/media/alpaka-main3.png": "/static/media/alpaka-main3.88638ef6cd6947a7600c.png",
     "static/media/NanumGothic-Regular.ttf": "/static/media/NanumGothic-Regular.3d4cadda438d02231739.ttf",
@@ -163,20 +163,20 @@
     "static/media/Clouds.png": "/static/media/Clouds.1ecf80ed0581fefb4cee.png",
     "static/media/overcastclouds.png": "/static/media/overcastclouds.1ecf80ed0581fefb4cee.png",
     "static/media/scatteredclouds.png": "/static/media/scatteredclouds.1ecf80ed0581fefb4cee.png",
-    "static/media/aresjoy-main1.png": "/static/media/aresjoy-main1.cf7c24fa0c6d0f3bfe27.png",
-    "static/media/trading-main1.png": "/static/media/trading-main1.4ef85b678d78827127ab.png",
-    "static/media/vake-main1.png": "/static/media/vake-main1.df8c9cac4c094ba9f5e5.png",
-    "static/media/controla-main1.png": "/static/media/controla-main1.00b7b8b48d708af65f0b.png",
-    "static/media/ukmedia-main1.png": "/static/media/ukmedia-main1.e74c2a6c7ec602f17291.png",
-    "static/media/twosky-main1.png": "/static/media/twosky-main1.0325b52cb5b44a20a526.png",
-    "static/media/ejiwon-main1.png": "/static/media/ejiwon-main1.a7adab804e2e9a994a96.png",
+    "static/media/aresjoy-main1.png": "/static/media/aresjoy-main1.2ddb49f8d036daf8e163.png",
+    "static/media/trading-main1.png": "/static/media/trading-main1.e1cb2e679284f0fb3c94.png",
+    "static/media/vake-main1.png": "/static/media/vake-main1.1ea3d9a0977c4a52c9ce.png",
+    "static/media/controla-main1.png": "/static/media/controla-main1.3071e0b6ab9e0da8c1e1.png",
+    "static/media/twosky-main1.png": "/static/media/twosky-main1.81e229a1de43b141ec89.png",
+    "static/media/ukmedia-main1.png": "/static/media/ukmedia-main1.021f026053275b0c50f0.png",
+    "static/media/ejiwon-main1.png": "/static/media/ejiwon-main1.7294736ebb03e4c54cc4.png",
     "index.html": "/index.html",
     "main.73cfc6d5.css.map": "/static/css/main.73cfc6d5.css.map",
-    "main.f0a69b65.js.map": "/static/js/main.f0a69b65.js.map",
+    "main.d12fd899.js.map": "/static/js/main.d12fd899.js.map",
     "453.c0a2c4b1.chunk.js.map": "/static/js/453.c0a2c4b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73cfc6d5.css",
-    "static/js/main.f0a69b65.js"
+    "static/js/main.d12fd899.js"
   ]
 }
