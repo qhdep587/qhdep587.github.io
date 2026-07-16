@@ -552,7 +552,7 @@ const Project = () => {
           break;
         case 26: //오토트레이딩봇
           setProjectCate("SIDE");
-          setProjectTitle("GOD TRADER");
+          setProjectTitle("오토트레이딩봇");
           setProjectSubTitle("AI 자동매매 시스템");
           setProjectInfo("사이드 프로젝트 / All");
           setProjectSkill(["TypeScript", "Next.js", "Express", "Supabase", "OpenAI"]);
@@ -1209,7 +1209,7 @@ const Project = () => {
                 <div className="img">
                   <img src={require("../common/project/trading-main1.png")} draggable="false" alt="trading-img" />
                 </div>
-                <h3>GOD TRADER</h3>
+                <h3>오토트레이딩봇</h3>
                 <span>
                   <span style={{ color: "#1e7c60", fontWeight: 600 }}>[ </span>
                   <span className="f15" style={{ color: "ivory", fontWeight: 500 }}>
