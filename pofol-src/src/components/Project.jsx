@@ -553,23 +553,36 @@ const Project = () => {
         case 26: //오토트레이딩봇
           setProjectCate("SIDE");
           setProjectTitle("오토트레이딩봇");
-          setProjectSubTitle("AI 자동매매 시스템");
+          setProjectSubTitle("암호화폐 자동매매 시스템");
           setProjectInfo("사이드 프로젝트 / All");
-          setProjectSkill(["TypeScript", "Next.js", "Express", "Supabase", "OpenAI"]);
+          setProjectSkill(["TypeScript", "Node.js", "Express", "BybitAPI", "Supabase", "TelegramBot"]);
           setEndNum(1);
           setPhotoUrl("trading-main");
           setContent(
             <>
-              암호화폐 자동매매 봇 프로젝트입니다.<br></br>
-              업비트 현물, 바이낸스 선물을<br></br>주기적으로 분석하여 자동매매합니다.<br></br>
-              <br></br>공포/탐욕, 고래 움직임, 다이버전스,<br></br>
-              펀딩비, ML 예측 등 모든 지표를<br></br>
-              통합 분석하는 AI 엔진(godBrain)과<br></br>
-              GPT 기반 시장 분석을 결합했습니다.<br></br>
-              <br></br>주기적인 성과 분석과 백테스팅으로<br></br>
-              파라미터를 자동 최적화하는<br></br>자가발전 구조이며,<br></br>
-              거래/일일/주간 보고 시스템도 갖췄습니다.<br></br>
-              <br></br>60개 이상의 api 라우트와<br></br>140개 이상의 서비스로 구성했습니다.
+              Bybit 선물 API를 연동하여<br></br>
+              전략 설계부터 검증, 운영까지<br></br>
+              직접 구축한 자동매매 봇입니다.<br></br>
+              <br></br>
+              ( 전략 )<br></br>
+              아시아 세션 레인지의 유동성 스윕 실패를<br></br>
+              역추세로 잡는 전략을 구현하고,<br></br>
+              1시간봉 EMA/ATR 기반 장세 필터로<br></br>
+              진입 조건을 제한했습니다.<br></br>
+              <br></br>
+              ( 백테스트 엔진 )<br></br>
+              룩어헤드 방지, 수수료/슬리피지 반영,<br></br>
+              승률·기대값(R)·최대낙폭 리포트까지<br></br>
+              백테스트 엔진을 직접 설계하여<br></br>
+              3년치 실데이터로 전략을 검증했습니다.<br></br>
+              <br></br>
+              ( 운영 )<br></br>
+              고정 % 리스크 모델과 TP1/TP2 분할 익절,<br></br>
+              텔레그램 제어/알림 봇, 포지션 스냅샷 등<br></br>
+              실계좌 운영을 위한 안전장치를 갖췄습니다.<br></br>
+              <br></br>
+              감이 아닌 데이터로 전략을 판정하는<br></br>
+              시스템을 만드는 것이 목표였던 프로젝트입니다.
             </>
           );
           break;
