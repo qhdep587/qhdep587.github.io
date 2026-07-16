@@ -579,7 +579,7 @@ const Project = () => {
           setProjectSubTitle("브이로그 메이킹 앱 (출시예정)");
           setProjectInfo("개발중 / All / 출시예정");
           setProjectSkill(["ReactNative", "Expo", "TypeScript", "Supabase", "FFmpeg"]);
-          setEndNum(6);
+          setEndNum(5);
           setPhotoUrl("vake-main");
           setContent(
             <>
