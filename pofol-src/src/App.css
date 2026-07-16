@@ -1012,7 +1012,8 @@
   vertical-align: middle;
   justify-items: center;
   width: 71.5%;
-  margin-left: 13%;
+  margin-left: auto;
+  margin-right: auto;
   padding: 1%;
   text-align: start;
   background-color: rgba(4, 52, 30, 0.1);
@@ -1854,8 +1855,9 @@
     font-size: 20px;
     color: ivory;
     transition: 0.3s;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
   }
   .left-menu-item:hover {
     color: rgb(73, 153, 132);
@@ -2660,7 +2662,8 @@
     vertical-align: middle;
     justify-items: center;
     width: 71.5%;
-    margin-left: 13%;
+    margin-left: auto;
+  margin-right: auto;
     padding: 1%;
     text-align: start;
     background-color: rgba(4, 52, 30, 0.1);
@@ -2969,8 +2972,9 @@
     color: ivory;
     display: block;
     transition: 0.3s;
-    padding-left: 15px;
-    padding-right: 5vw;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
   }
   .left-menu-item:hover {
     color: rgb(73, 153, 132);
@@ -4000,11 +4004,10 @@
   box-shadow: 0 26px 64px rgba(0, 0, 0, 0.55);
 }
 .x-btn {
-  transition: background 0.2s ease, transform 0.25s ease;
+  transition: background 0.2s ease;
 }
 .x-btn:hover {
   background: rgba(121, 9, 9, 0.85);
-  transform: rotate(90deg);
 }
 /* 스와이프 가이드 손가락 - 좌우 스와이프 제스처 느낌으로 */
 img.alim-move-pro {
