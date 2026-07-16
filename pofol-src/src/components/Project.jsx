@@ -553,23 +553,36 @@ const Project = () => {
         case 26: //오토트레이딩봇
           setProjectCate("SIDE");
           setProjectTitle("오토트레이딩봇");
-          setProjectSubTitle("AI 자동매매 시스템");
+          setProjectSubTitle("암호화폐 자동매매 시스템");
           setProjectInfo("사이드 프로젝트 / All");
-          setProjectSkill(["TypeScript", "Next.js", "Express", "Supabase", "OpenAI"]);
+          setProjectSkill(["TypeScript", "Node.js", "Express", "BybitAPI", "Supabase", "TelegramBot"]);
           setEndNum(1);
           setPhotoUrl("trading-main");
           setContent(
             <>
-              암호화폐 자동매매 봇 프로젝트입니다.<br></br>
-              업비트 현물, 바이낸스 선물을<br></br>주기적으로 분석하여 자동매매합니다.<br></br>
-              <br></br>공포/탐욕, 고래 움직임, 다이버전스,<br></br>
-              펀딩비, ML 예측 등 모든 지표를<br></br>
-              통합 분석하는 AI 엔진(godBrain)과<br></br>
-              GPT 기반 시장 분석을 결합했습니다.<br></br>
-              <br></br>주기적인 성과 분석과 백테스팅으로<br></br>
-              파라미터를 자동 최적화하는<br></br>자가발전 구조이며,<br></br>
-              거래/일일/주간 보고 시스템도 갖췄습니다.<br></br>
-              <br></br>60개 이상의 api 라우트와<br></br>140개 이상의 서비스로 구성했습니다.
+              Bybit 선물 API를 연동하여<br></br>
+              전략 설계부터 검증, 운영까지<br></br>
+              직접 구축한 자동매매 봇입니다.<br></br>
+              <br></br>
+              ( 전략 )<br></br>
+              아시아 세션 레인지의 유동성 스윕 실패를<br></br>
+              역추세로 잡는 전략을 구현하고,<br></br>
+              1시간봉 EMA/ATR 기반 장세 필터로<br></br>
+              진입 조건을 제한했습니다.<br></br>
+              <br></br>
+              ( 백테스트 엔진 )<br></br>
+              룩어헤드 방지, 수수료/슬리피지 반영,<br></br>
+              승률·기대값(R)·최대낙폭 리포트까지<br></br>
+              백테스트 엔진을 직접 설계하여<br></br>
+              3년치 실데이터로 전략을 검증했습니다.<br></br>
+              <br></br>
+              ( 운영 )<br></br>
+              고정 % 리스크 모델과 TP1/TP2 분할 익절,<br></br>
+              텔레그램 제어/알림 봇, 포지션 스냅샷 등<br></br>
+              실계좌 운영을 위한 안전장치를 갖췄습니다.<br></br>
+              <br></br>
+              감이 아닌 데이터로 전략을 판정하는<br></br>
+              시스템을 만드는 것이 목표였던 프로젝트입니다.
             </>
           );
           break;
@@ -577,22 +590,38 @@ const Project = () => {
           setProjectCate("SIDE");
           setProjectTitle("Vake");
           setProjectSubTitle("브이로그 메이킹 앱 (출시예정)");
-          setProjectInfo("개발중 / All / 출시예정");
-          setProjectSkill(["ReactNative", "Expo", "TypeScript", "Supabase", "FFmpeg"]);
+          setProjectInfo("개발중 / All / 2026 출시예정");
+          setProjectSkill(["ReactNative", "Expo", "TypeScript", "Supabase", "FFmpeg", "EAS"]);
           setEndNum(5);
           setPhotoUrl("vake-main");
           setContent(
             <>
               Vake = Vlog Make<br></br>
-              "찍은 영상 자동정리 + 스토리 있는 브이로그"<br></br>
-              를 컨셉으로 현재 개발중인 모바일 앱입니다.<br></br>
-              <br></br>촬영한 영상을 자동으로 정리하고,<br></br>
-              자막(STT), 편집, Undo, Export 등<br></br>
-              브이로그 제작에 필요한 기능을 담고 있습니다.<br></br>
-              <br></br>FFmpeg 렌더 서버(얼굴 블러 등)와<br></br>
-              Supabase 백엔드, EAS 빌드/OTA 배포로<br></br>
-              구성했으며 TestFlight 테스트 중입니다.<br></br>
-              <br></br>2026년 출시 예정입니다.
+              "찍기만 하면 브이로그가 완성되는 앱"을<br></br>
+              목표로 개발중인 모바일 앱입니다.<br></br>
+              <br></br>
+              ( 컨셉 )<br></br>
+              기존 편집앱이 "가져오면 알아서 편집"이라면,<br></br>
+              Vake는 반대로 스토리를 먼저 설계하고<br></br>
+              영상을 채워 넣는 방식입니다.<br></br>
+              여행/일상/커플/반려동물 등 유형별로<br></br>
+              AI가 스토리 섹션을 추천하고,<br></br>
+              촬영일 기준으로 클립을 자동 정리합니다.<br></br>
+              <br></br>
+              ( 편집기 )<br></br>
+              트림, 속도, 크롭, 필터, 자막(STT),<br></br>
+              스티커, BGM, 전환, PIP, 비율 변경 등<br></br>
+              풀 편집 기능을 직접 구현했으며<br></br>
+              릴스/틱톡/쇼츠 규격 Export를 지원합니다.<br></br>
+              <br></br>
+              ( 기술 구성 )<br></br>
+              ReactNative(Expo) + TypeScript 앱,<br></br>
+              Supabase 백엔드,<br></br>
+              FFmpeg 렌더 서버(얼굴 블러 등),<br></br>
+              EAS 빌드/OTA 배포 파이프라인 구성.<br></br>
+              <br></br>
+              현재 TestFlight 테스트 중이며<br></br>
+              2026년 출시 예정입니다.
             </>
           );
           break;
