@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.73cfc6d5.css",
+    "main.css": "/static/css/main.13874a2f.css",
     "main.js": "/static/js/main.ffbd3a91.js",
     "static/js/453.c0a2c4b1.chunk.js": "/static/js/453.c0a2c4b1.chunk.js",
     "static/media/alpaka-main3.png": "/static/media/alpaka-main3.88638ef6cd6947a7600c.png",
@@ -176,12 +176,12 @@
     "static/media/ukmedia-main1.png": "/static/media/ukmedia-main1.021f026053275b0c50f0.png",
     "static/media/ejiwon-main1.png": "/static/media/ejiwon-main1.7294736ebb03e4c54cc4.png",
     "index.html": "/index.html",
-    "main.73cfc6d5.css.map": "/static/css/main.73cfc6d5.css.map",
+    "main.13874a2f.css.map": "/static/css/main.13874a2f.css.map",
     "main.ffbd3a91.js.map": "/static/js/main.ffbd3a91.js.map",
     "453.c0a2c4b1.chunk.js.map": "/static/js/453.c0a2c4b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.73cfc6d5.css",
+    "static/css/main.13874a2f.css",
     "static/js/main.ffbd3a91.js"
   ]
 }

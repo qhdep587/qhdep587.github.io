@@ -582,8 +582,7 @@
 }
 .edu-text-box > .list-item::before {
   content: "";
-  background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
-  border-radius: 3px;
+  background: rgba(30, 124, 96, 0.85);
   height: 25px !important;
   width: 25px;
   padding-inline: 1.5px;
@@ -591,8 +590,7 @@
 }
 .edu-text-box > .list-item2::before {
   content: "";
-  background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
-  border-radius: 3px;
+  background: rgba(30, 124, 96, 0.85);
   height: 25px !important;
   width: 25px;
   padding-inline: 1.5px;
@@ -1548,8 +1546,7 @@
   }
   .edu-text-box > .list-item::before {
     content: "";
-    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
-    border-radius: 3px;
+    background: rgba(30, 124, 96, 0.85);
     height: 25px !important;
     width: 25px;
     padding-inline: 1.5px;
@@ -1557,8 +1554,7 @@
   }
   .edu-text-box > .list-item2::before {
     content: "";
-    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
-    border-radius: 3px;
+    background: rgba(30, 124, 96, 0.85);
     height: 25px !important;
     width: 25px;
     padding-inline: 1.5px;
@@ -2242,8 +2238,7 @@
   }
   .edu-text-box > .list-item::before {
     content: "";
-    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
-    border-radius: 3px;
+    background: rgba(30, 124, 96, 0.85);
     height: 25px !important;
     width: 25px;
     padding-inline: 1.5px;
@@ -2251,8 +2246,7 @@
   }
   .edu-text-box > .list-item2::before {
     content: "";
-    background: linear-gradient(to bottom, rgba(30, 124, 96, 0.9), rgba(121, 9, 9, 0.55));
-    border-radius: 3px;
+    background: rgba(30, 124, 96, 0.85);
     height: 25px !important;
     width: 25px;
     padding-inline: 1.5px;
